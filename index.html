@@ -32,9 +32,13 @@
       </div>
       <!-- <p>Made with ♡ Aini</p> -->
     </div>
-    <script src="script.js"></script>
+    <audio id="music" loop>
+      <source src="lagu.mp3" type="audio/mpeg" />
+    </audio>
+    <script src="script.js">
+      window.addEventListener("click", function() {
+        document.getElementById("music").play();
+      }, { once: true });
+    </script>
   </body>
-  <audio autoplay loop>
-    <source src="lagu.mp3" type="audio/mpeg" />
-  </audio>
 </html>
